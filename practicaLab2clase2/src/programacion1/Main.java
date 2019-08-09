@@ -15,5 +15,22 @@ public class Main {
          System.out.print(j+", ");
          j +=1;
      }
+        System.out.println("");
+        arreglos_nombres();
+    }
+    
+    
+    public static void arreglos_nombres(){
+        String[] matriz = new String[5];
+
+
+        for(int i = 0;i<5;i++){
+            matriz[i] = JOptionPane.showInputDialog("ingresar nombre:");
+        }
+
+        for(String nombre:matriz){
+            JOptionPane.showMessageDialog(null,"nombre:"+nombre);
+        }
+
     }
 }
